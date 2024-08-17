@@ -132,6 +132,7 @@ const Shortner = () => {
                     }
                     <p className='text-xs italic mt-4'>By clicking Shorten URL,
                         you agree to our <a href="sample.com" className='text-red-600'>Terms of Use and Privacy Policy</a>.</p>
+                    <p className='text-xs italic mt-4 flex justify-center items-center'>&copy; 2024 Rakesh. All rights reserved.</p>
 
                 </form>
             }

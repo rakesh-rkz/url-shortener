@@ -24,13 +24,13 @@ Follow these steps to get the application up and running on your local machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/url-shortener-app.git
+   git clone https://github.com/rakeshrkzzz/url-shortener.git
    cd url-shortener-app
 
 2. **Install dependencies:**
 
     ```bash
-       npm install
+    npm install
 
 3. **Set up Firebase:**
 
@@ -48,8 +48,8 @@ Follow these steps to get the application up and running on your local machine:
 
 4. **Start the development server:**
 
-     ```bash
-       npm start
+    ```bash
+    npm start
 
 Open **http://localhost:3000** in your browser to see the application
 

@@ -56,9 +56,24 @@ const Shortner = () => {
     useEffect(() => {
         if (isConvertedUrl !== "") {
             Database.getUrl(isConvertedUrl).then((data) => {
-                const result = data.docs[0].data()
-                window.open(`http://${result.original_url}`, '_blank');
-                window.location.href = "/";
+                if (data.docs.length > 0) {
+                    const result = data.docs[0].data()
+                    const newTab = window.open(`https://${result.original_url}`, "_blank");
+                    if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
+                        console.error("Popup blocked! Allow pop-ups in browser settings.");
+                        showError("Popup blocked! Please allow pop-ups.");
+                    } else {
+                        // Redirect current tab only if new tab opens successfully
+                        window.location.href = "/";
+                    }
+                }
+                else {
+                    console.error("No matching data found");
+                    showError("No matching URL found.");
+                    setTimeout(() => {
+                        window.location.href = "/";
+                    }, 2000);
+                }
             }).catch((err) => {
                 console.error(err);
                 showError(err)

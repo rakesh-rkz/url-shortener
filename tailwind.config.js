@@ -7,7 +7,7 @@ module.exports = {
         cream: '#FAF3F0', // Add your custom cream color here
       },
       fontFamily: {
-        poppins: ['Times New Roman', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

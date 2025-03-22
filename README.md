@@ -24,8 +24,8 @@ Follow these steps to get the application up and running on your local machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/rakeshrkzzz/url-shortener.git
-   cd url-shortener-app
+   git clone https://github.com/rakesh-rkz/url-shortener.git
+   cd url-shortener
 
 2. **Install dependencies:**
 
@@ -65,5 +65,5 @@ Open **http://localhost:3000** in your browser to see the application
 ## Contact
 For any questions or feedback, feel free to reach out:
 
-Your Name: rakeshrkz2101@gmail.com \
-GitHub: [rakesh](https://github.com/rakeshrkzzz) 
+Your Name: [Rakesh] rakeshrkz2101@gmail.com \
+GitHub: [Rakesh](https://github.com/rakesh-rkz) 

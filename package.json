@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://rakesh-rkz.github.io/url-shortener/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

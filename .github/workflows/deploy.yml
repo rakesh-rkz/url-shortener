@@ -3,7 +3,7 @@ name: Deploy Url Shortner App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Deploy when code is pushed to the main branch
+      - main  # Deploy when pushing to the main branch
 
 permissions:
   contents: write
@@ -31,4 +31,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages   # Deploy to the gh-pages branch
-          folder: build       # React build output folder
+          folder: build       # CRA builds to the 'build' folder

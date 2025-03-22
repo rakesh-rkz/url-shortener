@@ -79,7 +79,7 @@ const Shortner = () => {
                 showError(err)
             })
         }
-    }, [isConvertedUrl])
+    }, [isConvertedUrl, showError])
 
 
 

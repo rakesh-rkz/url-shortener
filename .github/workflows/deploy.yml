@@ -42,3 +42,4 @@ jobs:
         with:
           branch: gh-pages   # Deploy to the gh-pages branch
           folder: build       # CRA builds to the 'build' folder
+          clean: true

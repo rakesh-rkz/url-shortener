@@ -2,6 +2,8 @@
 
 This is a URL shortener application built using React, TypeScript, Tailwind CSS, react-toastify, and Firebase. The application allows users to shorten long URLs and manage their shortened links.
 
+**Live App URL :** [url-shortner.com](https://url-shortner-dc0d9.web.app/) 
+
 ## Features
 
 - **URL Shortening**: Convert long URLs into short, shareable links.

@@ -61,7 +61,10 @@ const Shortner = () => {
                     const newTab = window.open(`https://${result.original_url}`, "_blank");
                     if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
                         console.error("Popup blocked! Allow pop-ups in browser settings.");
-                        showError("Popup blocked! Please allow pop-ups.");
+                        showError("Popup blocked! Please allow pop-ups in browser settings.");
+                        setTimeout(() => {
+                            window.location.href = "/";
+                        }, 2000);
                     } else {
                         // Redirect current tab only if new tab opens successfully
                         window.location.href = "/";
